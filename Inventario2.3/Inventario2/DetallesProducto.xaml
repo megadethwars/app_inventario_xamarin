@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.DetallesProducto">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    
+    <StackLayout
+		Padding="50,0,50,0">
+        <StackLayout
+            Padding="0,0,0,0">
+            <Label
+			    HorizontalOptions="Center"
+			    Text="DETALLES DEL PRODUCTO" 
+			    FontAttributes="Bold"
+			    StyleId="Titulo"/>
+        </StackLayout>
+
+        <Label
+		    Text="Nombre del Producto:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="nameProd"
+            StyleId="informacion"/>
+        <Label
+			Text="ID del Producto:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idProd"
+            StyleId="informacion"/>
+        <Label
+			Text="Marca:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idmarca"
+            StyleId="informacion"/>
+        <Label
+			Text="Modelo:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idmodelo"
+            StyleId="informacion"/>
+        <Label
+			Text="Cantidad:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idcantidad"
+            StyleId="informacion"/>
+        <Label
+			Text="Observaciones:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idobserv"
+            StyleId="informacion"/>
+        <Label
+			Text="Lugar:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idlugar"
+            StyleId="informacion"/>
+        <Label
+			Text="Codigo de Barras:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idCodigo"
+            StyleId="informacion"/>
+        <Label
+			Text="Fecha de Ingreso :"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idFecha"
+            StyleId="informacion"/>
+        <Label
+			Text="Foto :"
+			FontAttributes="Bold"/>
+        <Image
+            x:Name="imagen"
+            WidthRequest="150"
+            HeightRequest="100"/>
+        <Button
+            HorizontalOptions="End"
+            VerticalOptions="End"
+			Text="Eliminar Producto"
+			Clicked="Button_Clicked"
+			StyleId="Ok"/>
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.DetallesCarrito">
+    <ContentPage.Content>
+        <StackLayout
+		Padding="50,0,50,0">
+            <StackLayout
+            Padding="0,0,0,0">
+                <Label
+			    HorizontalOptions="Center"
+			    Text="DETALLES DEL PRODUCTO" 
+			    FontAttributes="Bold"
+			    />
+            </StackLayout>
+
+            <Label
+		    Text="Nombre del Producto:"
+			FontAttributes="Bold"/>
+            <Label
+			x:Name="nameProd"
+            />
+            <Label
+			Text="Marca"
+			FontAttributes="Bold"/>
+            <Label
+			x:Name="marcatxt"
+            />
+            <Label
+			Text="Modelo:"
+			FontAttributes="Bold"/>
+            <Label
+			x:Name="modeltxt"
+            StyleId="informacion"/>
+            <Label
+			Text="Cantidad:"
+			FontAttributes="Bold"/>
+            <Label
+			x:Name="cantidadtxt"
+            />
+            <Label
+			Text="Observaciones:"
+			FontAttributes="Bold" />
+            <Label
+			x:Name="observtxt"
+            />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

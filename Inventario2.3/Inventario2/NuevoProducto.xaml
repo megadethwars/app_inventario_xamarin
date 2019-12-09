@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.NuevoProducto">
+    <!--<ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>-->
+    <ScrollView>
+    <StackLayout
+		Padding="50,20,50,20">
+        
+            <StackLayout
+			Padding="0,0,0,20">
+                <Label
+				HorizontalOptions="Center"
+				Text="AGREGAR NUEVO PRODUCTO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+            </StackLayout>
+            <Label
+				        Text="Nombre del Producto:"
+				        FontAttributes="Bold"/>
+            <Entry
+                        x:Name="nameEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Nombre del Producto" />
+            <Label
+				        Text="Codigo:"
+				        FontAttributes="Bold"/>
+            <Entry
+                        x:Name="codigoEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Codigo de barras" 
+                Keyboard="Numeric"/>
+
+            <Button
+			        HorizontalOptions="Center"
+			        Text="Escanear"
+			        FontAttributes="Bold"
+			        Clicked="Scan"/>
+
+            <StackLayout
+                    Orientation="Horizontal">
+                <Label
+				        Text="Marca del Producto:"
+				        FontAttributes="Bold"/>
+                <Entry
+                        x:Name="marca"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Marca" />
+            </StackLayout>
+
+            <StackLayout
+                    Orientation="Horizontal">
+                <Label
+				        Text="Modelo del Producto:"
+				        FontAttributes="Bold"/>
+                <Entry
+                        x:Name="modelo"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Modelo" />
+            </StackLayout>
+
+            <StackLayout
+                    Orientation="Horizontal">
+                <Label
+				        Text="Cantidad:"
+				        FontAttributes="Bold"/>
+                <Entry
+                        x:Name="cant"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Cantidad"
+                    Keyboard="Numeric"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Label
+                    Text="Observaciones" 
+			        FontAttributes="Bold"/>
+                <Editor 
+		            HeightRequest ="200"
+                    x:Name="observ"
+		            Placeholder="Indicar observaciones del producto" />
+            </StackLayout>
+
+            <Button
+			        Text="Agregar foto"
+			        x:Name="foto_nuevop"
+			        VerticalOptions="Center"
+			        FontAttributes="Bold"
+                    Clicked="Foto_nuevop_Clicked"/>
+            <Image
+                    x:Name="imagen"
+                    Aspect="AspectFill"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+
+            <Button
+			 Text="Agregar"
+			 Clicked="AgregarP"
+			 HorizontalOptions="End"
+			 FontAttributes="Bold"
+			 StyleId="Ok"/>
+       
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

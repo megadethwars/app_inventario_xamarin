@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.DetallesHistorial">
+    <StackLayout
+		Padding="50,0,50,0">
+        <StackLayout
+            Padding="0,0,0,0">
+            <Label
+			    HorizontalOptions="Center"
+			    Text="DETALLES DEL PRODUCTO" 
+			    FontAttributes="Bold"
+			    />
+        </StackLayout>
+        <Label
+		    Text="Usuario:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="nameUser"
+            StyleId="informacion"/>
+        <Label
+		    Text="Nombre del Producto:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="nameProd"
+            StyleId="informacion"/>
+        <Label
+			Text="ID del Producto:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idProd"
+            StyleId="informacion"/>
+        <Label
+			Text="Marca:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idmarca"
+            StyleId="informacion"/>
+        <Label
+			Text="Modelo:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idmodelo"
+            StyleId="informacion"/>
+        <Label
+			Text="Cantidad:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idcantidad"
+            StyleId="informacion"/>
+        <Label
+			Text="Observaciones:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idobserv"
+            StyleId="informacion"/>
+        <Label
+			Text="Lugar:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idlugar"
+            StyleId="informacion"/>
+        <Label
+			Text="Tipo de Movimiento:"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idMove"
+            StyleId="informacion"/>
+        <Label
+			Text="Fecha de Movimiento :"
+			FontAttributes="Bold"/>
+        <Label
+			x:Name="idFecha"
+            StyleId="informacion"/>
+        <Label
+			Text="Foto :"
+			FontAttributes="Bold"/>
+        <Image
+            x:Name="imagen"
+            WidthRequest="150"
+            HeightRequest="100"/>
+    </StackLayout>
+</ContentPage>

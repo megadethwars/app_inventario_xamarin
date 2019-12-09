@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             x:Class="Inventario2.Empleado">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    <StackLayout
+		Padding="50,10,50,10">
+       <Label
+        	HorizontalOptions="Center"
+		    Text="EMPLEADOS" 
+			FontAttributes="Bold"
+			StyleId="Titulo"/>
+
+        <SearchBar 
+            x:Name="search"
+            Placeholder="Buscar por nombre o ID"
+            CancelButtonColor="Red"
+            SearchButtonPressed="SearchBarEmp" />
+        
+            <Grid
+	             ColumnSpacing="10">
+
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+
+                <Label
+                     Text="ID:" 
+				     FontAttributes="Bold"
+                     Grid.Column="0"/>
+
+                <Label
+                     Text="Usuario:" 
+				     FontAttributes="Bold"
+                     Grid.Column="1"/>
+
+                <Label
+                     Text="Tipo de Usuario:" 
+				     FontAttributes="Bold"
+                     Grid.Column="2"/>
+
+            </Grid>
+        <ScrollView
+            HeightRequest="350"			
+            HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <ListView x:Name="postListView" ItemSelected="PostListView_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100"/>
+
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="{Binding ID}" Grid.Column="0"/>
+                                        <Label Text="{Binding nombre}" Grid.Column="1"/>
+                                        <Label Text="{Binding tipoUsuario}" Grid.Column="2"/>
+
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+
+        <Button
+            HorizontalOptions="Start"
+            Text="Agregar Empleado"
+            FontAttributes="Bold"
+            StyleId="Ok"
+            Clicked="AgregarEmp"/>
+    </StackLayout>
+</ContentPage>

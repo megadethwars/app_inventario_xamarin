@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms" 
+             xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
+             mc:Ignorable="d"
+             x:Class="Inventario2.RetirarProducto">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Borrar Todo" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout
+		Padding="50,20,50,20">
+        <StackLayout
+			Padding="0,0,0,50">
+            <Label
+				HorizontalOptions="Center"
+				Text="RETIRAR PRODUCTO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <SearchBar
+                    x:Name="search"
+			        Placeholder="Buscar por nombre o ID"
+			        CancelButtonColor="Red"
+			        SearchButtonPressed="SearchBar" />
+                
+                <Button
+			        HorizontalOptions="Center"
+			        Text="Escanear"
+			        FontAttributes="Bold"
+			        Clicked="Scan"/>
+
+                <Button
+			        Text="Agregar fotos de estado"
+			        x:Name="ScanFotosOut"
+			        HorizontalOptions="FillAndExpand"
+			        VerticalOptions="Center"
+			        FontAttributes="Bold"/>
+                <Image
+                    x:Name="imagen"
+                    WidthRequest="150"
+                    HeightRequest="150"/>
+                
+                <Label Text="Nombre del producto: "
+                       FontAttributes="Bold"/>
+
+                <Label x:Name="nombreTxt"
+                       FontAttributes="Italic"/>
+                
+                <Label Text="Marca del producto: "
+                       FontAttributes="Bold"/>
+
+                <Label x:Name="modelotxt"
+                       FontAttributes="Italic"/>
+                <Label Text="Cantidad disponible del producto: "
+                       FontAttributes="Bold"/>
+
+                <Label x:Name="cantidadtxt"
+                       FontAttributes="Italic"/>
+
+                <Label
+				        Text="Introduzca la cantidad deseada:"
+				        FontAttributes="Bold"/>
+                <Entry
+                        x:Name="cantEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Nombre del Producto" 
+                        Keyboard="Numeric"/>
+
+                <Label
+				        Text="Introduzca el lugar de destino:"
+				        FontAttributes="Bold"/>
+                <Entry
+                        x:Name="lugarEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Lugar de Destino" 
+                        />
+
+                <Label
+                    Text="Observaciones" 
+			        FontAttributes="Bold"/>
+                <Editor 
+		            HeightRequest ="100"
+                    x:Name="editorTxt"
+		            Placeholder="Indicar observaciones del producto" />
+
+                <StackLayout>
+               
+			
+                <Button
+			        Text="Agregar al carrito"
+			        Clicked="RetiraP"
+			        HorizontalOptions="End"
+			        FontAttributes="Bold"
+			        StyleId="Ok"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

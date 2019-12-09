@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.HistorialCompleto">
+    
+    
+    <StackLayout
+		Padding="50,10,50,10">
+        <StackLayout
+			Padding="0,0,0,10">
+            <Label
+				HorizontalOptions="Center"
+				Text="HISTORIAL" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+
+        <SearchBar
+            x:Name="searchbar"
+			Placeholder="Buscar por nombre o ID"
+			CancelButtonColor="Red"
+			SearchButtonPressed="Search_SearchButtonPressed" />
+
+        <Button
+			HorizontalOptions="Center"
+            FontAttributes="Bold"
+			Text="Escanear"
+			Clicked="Button_Clicked" />
+
+        <StackLayout
+            Orientation="Horizontal">
+            <Label
+                Text="Desde:" 
+				FontAttributes="Bold"/>
+            <DatePicker
+		        x:Name="desde"
+                Format="dd/MM/yyyy"/>
+        </StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal"
+			Padding="0,0,0,20">
+            <Label
+                Text="Hasta:" 
+				FontAttributes="Bold"/>
+            <DatePicker
+		        x:Name="hasta"
+                Format="dd/MM/yyyy"/>
+        </StackLayout>
+
+        <Switch x:Name="includeSwitch"
+                    Toggled="IncludeSwitch_Toggled" />
+        
+        
+        <Grid
+	        ColumnSpacing="10">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="Usuario:" 
+				FontAttributes="Bold"
+                Grid.Column="0"
+				/>
+
+            <Label
+                Text="Producto" 
+				FontAttributes="Bold"
+                Grid.Column="1"
+				/>
+
+            <Label
+                Text="Movimiento" 
+				FontAttributes="Bold"
+                Grid.Column="2"
+				/>
+        </Grid>
+
+
+        <ScrollView
+			VerticalOptions="FillAndExpand"
+			HeightRequest="350">
+            <StackLayout>
+                <ListView x:Name="postListView"  ItemSelected="PostListView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100"/>
+                                            <ColumnDefinition Width="100"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="{Binding usuario}" Grid.Column="0"/>
+                                        <Label Text="{Binding producto}" Grid.Column="1"/>
+                                        <Label Text="{Binding movimiento}" Grid.Column="2"/>
+
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             x:Class="Inventario2.AgregarEmpleado">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    <StackLayout
+       Padding="50,20,50,0" >
+        <Label
+                HorizontalOptions="Center"
+				Text="AGREGAR EMPLEADO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+
+        <Label
+            Text="Nombre del Empleado:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="nombrEntry"
+			HorizontalOptions="FillAndExpand" 
+			Placeholder="Nombre del Empleado" />
+        <Label
+			Text="Apellido Paterno:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="apepEntry"
+			HorizontalOptions="FillAndExpand" 
+			Placeholder="Apellido Paterno" />
+        <Label
+			Text="Apellido Materno:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="apemEntry"
+			HorizontalOptions="FillAndExpand" 
+			Placeholder="Apellido Materno" />
+        <Label
+			Text="Ingresa la nueva contraseña:"
+	        FontAttributes="Bold"/>
+        <Entry
+            x:Name="contra2"
+			Placeholder="Contraseña"
+			IsPassword= "True" />
+        <Label
+			Text="Reitera tu contraseña:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="contraEntry"
+			Placeholder="Contraseña"
+			IsPassword= "True" />
+        <Label
+			Text="telefono:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="telEntry"
+			Placeholder="Telefono"
+			Keyboard="Numeric" />
+        <Label
+			Text="Correo:"
+			FontAttributes="Bold"/>
+        <Entry
+            x:Name="correoEntry"
+			Placeholder="Correo Electronico"
+			Keyboard="Email" />
+        
+                    
+        <Label
+            Text="Tipo de usuario"
+            FontAttributes="Bold"/>
+        <Picker x:Name="pickerUser"
+            Title="selecciona el tipo de usuario"
+            SelectedIndexChanged="PickerUser_SelectedIndexChanged">
+        <Picker.Items>
+                <x:String>Usuario</x:String>
+                <x:String>Administrador</x:String>
+                <x:String>Almacen</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button
+		    Text="Agregar"
+		    Clicked="AgregaEmp"
+		    HorizontalOptions="End"
+            VerticalOptions="End"
+		    FontAttributes="Bold"
+		    StyleId="Ok"/>
+        
+    </StackLayout>
+</ContentPage>

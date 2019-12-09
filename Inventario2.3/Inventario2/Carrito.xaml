@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.Carrito">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Borrar Carrito" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <StackLayout
+			Padding="0,0,0,20">
+            <Label
+				HorizontalOptions="Center"
+				Text="CARRITO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+        <StackLayout>
+            <Entry
+                        x:Name="userEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Usuario" 
+                        />
+            <Entry
+                        x:Name="passEntry"
+				        HorizontalOptions="FillAndExpand" 
+				        Placeholder="Contraseña" 
+                        IsPassword="True"
+                        />
+        </StackLayout>
+        <ScrollView>
+        <ListView x:Name="postListView" ItemSelected="PostListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding producto}" Grid.Column="0"/>
+                                <Label Text="{Binding cantidad}" Grid.Column="1"/>
+                                <Button Text="Eliminar " Clicked="Button_Clicked" Grid.Column="2"/>
+
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </ScrollView>
+        
+        <Button
+            x:Name="acept"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+			Text="Aceptar"
+			Clicked="Acept_Clicked"
+			/>
+    </StackLayout>
+</ContentPage>

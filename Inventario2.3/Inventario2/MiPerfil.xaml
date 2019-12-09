@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.MiPerfil">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    
+    <StackLayout
+		Padding="50,20,50,20">
+        <StackLayout
+			Padding="0,0,0,70">
+            <Label
+				HorizontalOptions="Center"
+				Text="MI PERFIL" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button
+                StyleId="foto"
+				HorizontalOptions="Center"
+                FontAttributes="Bold"
+				WidthRequest="200"
+			    HeightRequest="200"
+                BorderRadius="100"/>
+        </StackLayout>
+
+        <StackLayout 
+			Orientation="Horizontal">
+            <Label
+				Text="Nombre:"
+				FontAttributes="Bold"/>
+            <Label
+				x:Name="name"
+                StyleId="informacion"/>
+        </StackLayout>
+
+        <StackLayout 
+			Orientation="Horizontal">
+            <Label
+				Text="ID del Empleado:"
+				FontAttributes="Bold"/>
+            <Label
+				x:Name="idPersonal"
+                StyleId="informacion"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.IngresarProducto">
+    <!--<ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>-->
+    <StackLayout
+		Padding="50,20,50,20">
+        <StackLayout
+			Padding="0,0,0,50">
+            <Label
+				HorizontalOptions="Center"
+				Text="REINGRESAR PRODUCTO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+
+        <ScrollView>
+            <StackLayout>
+                <SearchBar
+                    x:Name="search"
+			        Placeholder="Buscar por nombre o ID"
+			        CancelButtonColor="Red"
+			        SearchButtonPressed="SearchBar" />
+                <Button
+			        HorizontalOptions="Center"
+			        Text="Escanear"
+			        FontAttributes="Bold"
+			        Clicked="Scan"/>
+
+                <Button
+			        Text="Agregar fotos de estado"
+			        x:Name="butt_foto"
+			        VerticalOptions="Center"
+			        FontAttributes="Bold"/>
+                
+                <Image
+                    x:Name="imagen"
+                    Aspect="AspectFill"
+                    HeightRequest="150"
+                    WidthRequest="150"/>
+
+                <Label
+                    Text="Observaciones" 
+			        FontAttributes="Bold"/>
+                
+                <Editor 
+		            Placeholder="Indicar observaciones del producto." />
+
+                <StackLayout 
+			        Orientation="Horizontal">
+                    <Label
+				        Text="Ingresar usuario:"
+				        FontAttributes="Bold"/>
+                    <Entry
+				        VerticalOptions="FillAndExpand" 
+				        Placeholder="Usuario" />
+                </StackLayout>
+                
+                <StackLayout 
+			        Orientation="Horizontal">
+                    <Label
+				        Text="Contraseña:"
+				        FontAttributes="Bold"/>
+                    <Entry
+				        VerticalOptions="FillAndExpand" 
+				        Placeholder="Contraseña"
+				        IsPassword= "True" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        <Button
+			 Text="Ingresar"
+			 Clicked="ReingresaP"
+			 HorizontalOptions="End"
+			 FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>

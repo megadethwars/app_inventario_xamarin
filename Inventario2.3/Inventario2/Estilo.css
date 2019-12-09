@@ -1,0 +1,82 @@
+﻿^contentpage {
+    background-color: black;
+}
+
+
+^label {
+    color: white;
+    text-align: center;
+}
+
+scrollview label {
+    color: black;
+    text-align: center;
+}
+
+listview  {
+    color: black;
+    text-align: center;
+}
+
+^picker {
+    color: white;
+    text-align: center;
+}
+
+^searchbar {
+    background-color: mintcream;
+    color: black;
+}
+
+^button {
+    border-bottom-width: 50px;
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+^stacklayout {
+    background-color: transparent;
+}
+
+^entry{
+    background-color: white;
+    font-style: italic;
+}
+
+^editor {
+    background-color: white;
+    font-style: italic;
+    height:200px;
+}
+
+
+^scrollview {
+    color: black;
+    background-color: white;
+}
+
+#Titulo {
+    color:darkturquoise ;
+    font-family:'Californian FB';
+    font-size: large;
+    text-align: center;
+}
+
+#informacion{
+    color:white;
+    text-align:center;
+    font-style:italic;
+}
+
+#Ok {
+    border-bottom-width: 4px;
+    border-color: white;
+    background-color: firebrick;
+    color: white;
+}
+
+#foto{
+    background-color: white;
+    border-color: red;
+}

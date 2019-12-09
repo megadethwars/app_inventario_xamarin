@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.DetallesEmpleado">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    
+    <StackLayout
+		Padding="50,20,50,20">
+        <StackLayout
+            Padding="0,0,0,20">
+            <Label
+				HorizontalOptions="Center"
+				Text="DETALLES DE EMPLEADO" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+
+                <Label
+			        Text="Nombre del Empleado:"
+			        FontAttributes="Bold"/>
+                 <Label
+			        x:Name="nameEmp"
+                     StyleClass="informacion"/>
+                 <Label
+			        Text="ID del Empleado:"
+			        FontAttributes="Bold"/>
+                <Label
+			        x:Name="idEmpAsig"
+                    StyleClass="informacion"/>
+                <Label
+			        Text="Fecha de contratacion:"
+			        FontAttributes="Bold"/>
+                <Label
+			        x:Name="fechaCont"
+                    StyleId="informacion"/>
+                <Label
+			        Text="Tipo de usuario:"
+			        FontAttributes="Bold"/>
+                <Label
+		            x:Name="tipoUs"
+                    StyleId="informacion"/>
+        <Label
+			        Text="Correo:"
+			        FontAttributes="Bold"/>
+        <Label
+		            x:Name="correotext"
+                    StyleId="informacion"/>
+        <Label
+			        Text="Telefono:"
+			        FontAttributes="Bold"/>
+        <Label
+		            x:Name="telText"
+                    StyleId="informacion"/>
+        <Button
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+			        Text="Eliminar Empleado"
+			        Clicked="EliminaEmp"
+			        StyleId="Ok"/>
+            </StackLayout>
+</ContentPage>

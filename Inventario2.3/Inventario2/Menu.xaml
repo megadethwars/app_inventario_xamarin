@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Inventario2.Menu">
+    <ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>
+    
+    <StackLayout
+        Padding="50,20,50,20">
+        <Label
+			    HorizontalOptions="Center"
+			    Text="MENU" 
+			    FontAttributes="Bold"
+			    StyleId="Titulo"
+			    Margin="0,0,0,10"/>
+        <Grid
+            ColumnSpacing="20"
+            RowSpacing="20"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+			    Text="Mi Perfil"
+			    Clicked="Ir_Perfil"
+			    FontAttributes="Bold"/>
+
+            <Button
+                x:Name="buttInvent"
+			    Text="Inventario"
+			    Clicked="Ir_Inventario"
+			    FontAttributes="Bold"
+			    Grid.Column="1"/>
+
+            <Button
+			    Text="Historial"
+			    Clicked="Ir_Historial"
+			    FontAttributes="Bold"
+			    Grid.Row="1"/>
+
+            <Button
+			    Text="Empleados"
+			    Clicked="Ir_Empleados"
+			    FontAttributes="Bold"
+			    Grid.Row="1"
+			    Grid.Column="1"/>
+
+            <Button
+                Text="Levantar Reporte"
+			    Clicked="Ir_Reporte"
+			    FontAttributes="Bold"
+			    Grid.Row="2"/>
+
+            <Button
+                Text="Ajustes"
+			    Clicked="Ir_Ajustes"
+			    FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="2"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

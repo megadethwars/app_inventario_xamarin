@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             x:Class="Inventario2.LevantarReporte">
+    <!--<ContentPage.Resources>
+        <StyleSheet Source="Estilo.css"/>
+    </ContentPage.Resources>-->
+    
+    <StackLayout
+		Padding="50,20,50,20">
+        <StackLayout
+			Padding="0,0,0,50">
+            <Label
+				HorizontalOptions="Center"
+				Text="LEVANTAR REPORTE" 
+				FontAttributes="Bold"
+				StyleId="Titulo"/>
+        </StackLayout>
+
+        <ScrollView>
+            <StackLayout>
+                <StackLayout 
+			        Orientation="Horizontal">
+
+                    <Label
+				        Text="Producto:"
+				        FontAttributes="Bold"/>
+
+                    <Entry x:Name="nombreID"
+				        HorizontalOptions="FillAndExpand"
+				        Placeholder="Nombre o ID del Producto"/>
+
+                </StackLayout>
+
+                <Button
+			        HorizontalOptions="Center"
+			        Text="Escanear"
+			        FontAttributes="Bold"			       
+			        Clicked="Scan"/>
+
+                <Label
+			        Text="Descripcion:" 
+			        FontAttributes="Bold"/>
+
+                <Editor 
+			        HeightRequest ="200"
+			        Placeholder="Indicar observaciones del producto." />
+
+                <Button
+			        Text="Agregar fotos de estado"
+			        x:Name="fotos1"
+			        HorizontalOptions="FillAndExpand"
+                    Clicked="Button_Clicked"
+			        VerticalOptions="Center"/>
+
+                <StackLayout
+			        HorizontalOptions="End">
+                    <Button
+				        Text="Enviar"
+				        Clicked="Enviar_Reporte"
+				        HorizontalOptions="End"
+				        FontAttributes="Bold"
+				        StyleId="Ok"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
