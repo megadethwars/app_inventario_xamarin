@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.Storage;
 using Plugin.Media;
-using SQLite;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -51,8 +51,8 @@ namespace Inventario2
                 Fecha = DateTime.Now.ToString("dd/MM/yyyy")
             };
 
-            SQLiteConnection conn = new SQLiteConnection(App.DtabaseLocation);
-            conn.CreateTable<InventDB>();
+            
+           
             try
             {
                 await App.MobileService.GetTable<InventDB>().InsertAsync(invent);

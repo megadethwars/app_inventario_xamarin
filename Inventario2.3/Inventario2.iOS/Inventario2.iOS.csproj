@@ -139,9 +139,6 @@
     <PackageReference Include="Plugin.Permissions">
       <Version>3.0.0.12</Version>
     </PackageReference>
-    <PackageReference Include="sqlite-net-pcl">
-      <Version>1.6.292</Version>
-    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Pdf">
       <Version>17.3.0.14</Version>
     </PackageReference>

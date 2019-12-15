@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Inventario2.Model;
-using SQLite;
+
 using Microsoft.WindowsAzure.MobileServices;
 
 namespace Inventario2

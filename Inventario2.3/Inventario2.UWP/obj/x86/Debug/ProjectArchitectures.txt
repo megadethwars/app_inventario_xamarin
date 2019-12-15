@@ -1,1 +1,1 @@
-C:\Users\rogelio\Desktop\Inventario2.3\Inventario2.UWP\Inventario2.UWP.csproj;x86
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2.UWP\Inventario2.UWP.csproj;x86

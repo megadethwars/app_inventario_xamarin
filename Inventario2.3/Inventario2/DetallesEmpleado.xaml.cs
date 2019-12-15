@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Inventario2.Model;
 using Microsoft.WindowsAzure.MobileServices;
-using SQLite;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

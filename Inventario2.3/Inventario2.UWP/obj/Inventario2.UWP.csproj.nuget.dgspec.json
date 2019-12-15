@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj": {}
+    "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj": {
+    "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj",
         "projectName": "Inventario2.UWP",
-        "projectPath": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj",
-        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2.UWP\\obj\\",
+        "projectPath": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2.UWP\\Inventario2.UWP.csproj",
+        "packagesPath": "C:\\Users\\leone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\Inventario2.csproj": {
-                "projectPath": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\Inventario2.csproj"
+              "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\Inventario2.csproj": {
+                "projectPath": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\Inventario2.csproj"
               }
             }
           }
@@ -82,10 +82,6 @@
             "ZXing.Net.Mobile.Forms": {
               "target": "Package",
               "version": "[2.4.1, )"
-            },
-            "sqlite-net-pcl": {
-              "target": "Package",
-              "version": "[1.6.292, )"
             }
           },
           "imports": [
@@ -119,21 +115,21 @@
         }
       }
     },
-    "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\Inventario2.csproj": {
+    "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\Inventario2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\Inventario2.csproj",
+        "projectUniqueName": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\Inventario2.csproj",
         "projectName": "Inventario2",
-        "projectPath": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\Inventario2.csproj",
-        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rogelio\\Desktop\\Inventario2.3\\Inventario2\\obj\\",
+        "projectPath": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\Inventario2.csproj",
+        "packagesPath": "C:\\Users\\leone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leone\\Documents\\GITHUB repositories\\app_inventario_xamarin\\Inventario2.3\\Inventario2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -199,10 +195,6 @@
             "ZXing.Net.Mobile.Forms": {
               "target": "Package",
               "version": "[2.4.1, )"
-            },
-            "sqlite-net-pcl": {
-              "target": "Package",
-              "version": "[1.6.292, )"
             }
           },
           "imports": [
@@ -215,7 +207,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SQLite;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,11 +24,11 @@ namespace Inventario2
         {
             base.OnAppearing();
             search.Text = stringcode;
-            SQLiteConnection conn = new SQLiteConnection(App.DtabaseLocation);
-            conn.CreateTable<InventDB>();
+          
+          
             var usuarios = await App.MobileService.GetTable<InventDB>().ToListAsync();
             
-            conn.Close();
+           
             postListView.ItemsSource = usuarios;
         }
 

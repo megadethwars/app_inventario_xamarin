@@ -245,3 +245,39 @@ C:\Users\rogelio\Desktop\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\ref\
 C:\Users\rogelio\Desktop\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.pdb
 C:\Users\rogelio\Desktop\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.csprojAssemblyReference.cache
 C:\Users\rogelio\Desktop\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\DetallesHistorial.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\bin\Debug\netstandard2.0\Inventario2.deps.json
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\bin\Debug\netstandard2.0\Inventario2.dll
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\bin\Debug\netstandard2.0\ref\Inventario2.dll
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\bin\Debug\netstandard2.0\Inventario2.pdb
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.csprojAssemblyReference.cache
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\AgregarEmpleado.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Ajustes.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Carrito.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\DetallesCarrito.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\DetallesEmpleado.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\DetallesHistorial.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\DetallesProducto.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Empleado.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Escanear.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Escanear2.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Escanear3.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Escanear4.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Escanear5.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\HistorialCompleto.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\HistorialUsuario.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\IngresarProducto.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\LevantarReporte.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Menu.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\MiPerfil.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\NuevoProducto.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\RetirarProducto.xaml.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Estilo.css.g.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.AssemblyInfoInputs.cache
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.AssemblyInfo.cs
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.dll
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\ref\Inventario2.dll
+C:\Users\leone\Documents\GITHUB repositories\app_inventario_xamarin\Inventario2.3\Inventario2\obj\Debug\netstandard2.0\Inventario2.pdb
