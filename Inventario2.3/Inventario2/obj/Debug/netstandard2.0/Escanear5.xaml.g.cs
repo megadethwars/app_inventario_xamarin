@@ -16,7 +16,7 @@ namespace Inventario2 {
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Escanear5.xaml")]
     public partial class Escanear5 : global::ZXing.Net.Mobile.Forms.ZXingScannerPage {
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Escanear5));
         }
